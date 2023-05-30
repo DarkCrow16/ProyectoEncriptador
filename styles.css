@@ -57,13 +57,13 @@ body{
     color: #505050;
 }
 
-.texto:focus,
+/* .texto:focus,
 .texto:active,
 .texto2:focus,
 .texto2:active {
     border: none;
     outline: none;
-}
+} */
 
 .terminos {
     display: flex;
@@ -179,8 +179,8 @@ body{
 }
 .programador{
     position: absolute;
-    width: 160px;
-    height: 140px;
+    width: 60%;
+    height: 40%;
 }
 .copy{
     justify-content: center;

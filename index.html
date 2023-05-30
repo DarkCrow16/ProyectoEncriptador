@@ -7,7 +7,7 @@
         <title>Encriptador</title>
         <link rel="icon" href="img/ico.jpg">
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="index.js">
+        <script src="index.js"></script>
     </head>
     <body>
         <header>
@@ -15,25 +15,20 @@
         </header>
         <div class="container">
             <div class="encriptar">
-            <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
-            placeholder="Ingresa el texto aquí"></textarea>
+                <textarea class="texto" id="texto" placeholder="Ingresa el texto aquí"></textarea>
+                <div class="terminos">
+                    <p>Solo letras minúsculas y sin acentos.</p>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
 
-            <div class="terminos">
-                <p>Solo letras minúsculas y sin acentos.</p>
-            </div>
-            <div class="botones">
-                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
-                <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
-            </div>
-
-            </div>
             <div class="encriptado">                
-                <button class="copy">¡Copiar Texto!</button>
-                <img src="img/Programador.jpg" class="programador">                             
-                    <!-- <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2> -->
-                    <textarea name="texto2" class="texto2" id="texto2" cols="30" rows="10"
-                    placeholder="Ningun mensaje fue encontrado"></textarea>
-                    <!-- <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p> -->
+                <button type="button" class="copy" id="copy" onclick="copy()">¡Copiar Texto!</button>
+                <img src="img/Programador.jpg" class="programador" id="programador">
+                    <textarea class="texto2" id="texto2" placeholder="Ningun mensaje fue encontrado"></textarea>
             </div>
         </div>
     </body>
